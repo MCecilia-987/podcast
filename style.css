@@ -342,9 +342,9 @@ footer {
   }
   .imgContainer {
     flex-direction: row;
-    width: 590px;
+    width: 360px;
     position: relative;
-    right: 510px;
+    right: 300px;
   }
   #subjects {
     display: flex;

@@ -141,7 +141,9 @@ footer {
 }
 .positionTwo {
   position: relative;
-  top: 1000px;
+  top: -200px;
+  text-align: start;
+  width: 100vw;
 }
 .positionThree {
   position: relative;
@@ -343,9 +345,9 @@ footer {
   }
   .imgContainer {
     flex-direction: row;
-    width: 360px;
-    position: relative;
-    right: 300px;
+    width: 480px;
+    /* position: relative;
+    right: 300px; */
   }
   #subjects {
     display: flex;

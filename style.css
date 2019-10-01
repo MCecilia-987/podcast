@@ -345,6 +345,7 @@ footer {
   }
   .imgContainer {
     flex-direction: row;
+    justify-content: center;
     width: 480px;
     /* position: relative;
     right: 300px; */

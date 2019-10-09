@@ -1,6 +1,7 @@
 body {
   max-width: 100%;
   overflow-x: hidden;
+  margin: 0px;
 }
 li {
   list-style-type: none;
@@ -18,13 +19,16 @@ footer {
 }
 
 .mainContainer {
-  /* width: 320px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "IBM Plex Sans", sans-serif;
   margin-bottom: 24px;
   margin-top: 24px;
+}
+
+.rightAlignment {
+  align-items: flex-start;
 }
 .button a {
   text-decoration: none;
@@ -44,6 +48,7 @@ footer {
   line-height: 48px;
   cursor: pointer;
   box-sizing: border-box;
+  margin-top: 15px;
 }
 .button.firstButton:hover {
   background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
@@ -56,7 +61,7 @@ footer {
   font-size: 36px;
   line-height: 42px;
   color: #060a24;
-  justify-content: flex-start;
+  /* margin: auto 10px; */
 }
 .whiteLetter {
   color: #ffffff;
@@ -67,6 +72,10 @@ footer {
   color: #060a24;
   letter-spacing: 0;
   line-height: 22px;
+  margin: 10px 10px;
+}
+.display{
+  margin: 10px 10px;
 }
 .display span {
   text-decoration: line-through;
@@ -76,10 +85,10 @@ footer {
   height: 225px;
 }
 .phone {
-  width: 100vw;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
+  /* width: 100vw; */
+  /* margin: 20px; */
+  /* display: flex; */
+  /* justify-content: center; */
   position: relative;
   top: -200px;
 }
@@ -115,6 +124,7 @@ footer {
     rgba(0, 0, 255, 1) 4.8%,
     rgba(0, 0, 163, 1) 85.8%
   );
+  /* transform: rotate(45deg) */
   clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
 }
 .blueGradientFoot {
@@ -142,7 +152,7 @@ footer {
 .positionTwo {
   position: relative;
   top: -200px;
-  text-align: start;
+  /* text-align: start; */
   width: 100vw;
 }
 .positionThree {
@@ -286,6 +296,14 @@ footer {
 
 /* -------------------DESKTOP VIEW----------------------------- */
 @media (min-width: 768px) {
+  .navbar{
+   display: flex;
+  justify-content: space-between; 
+  }
+  .navbar .logo {
+  display: block;
+  padding: 10px 45px;
+}
   .navbar li {
     float: left;
   }
@@ -293,47 +311,63 @@ footer {
     padding: 20px 30px;
   }
   .navbar .menu {
-    clear: none;
-    float: right;
-    max-height: none;
+  max-height: none;
   }
   .navbar .menu-icon {
     display: none;
   }
   .header {
     position: relative;
-    width: 100vw;
+    width: 80vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+  }
+
+  .header .mainContainer {
+    align-items: flex-start;
+  }
+
+  .header .mainContainer .title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header .mainContainer .lead {
+    width: 50%;
   }
   .heightFirst {
-    height: 700px;
+    height: 1000px;
   }
+  #episodes {
+  margin-top: 60px;
+}
   .desktopContainer {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-evenly;
-    width: 80%;
+    width: 100%;
   }
   .desktopContainer .podcast {
-    width: 340px;
-    height: 265px;
+    width: 584px;
+    height: 232px;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
 
   .mainContainer .mainContainer {
     flex-direction: row;
   }
   .mainContainer .phone {
-    width: 50vw;
+    /* width: 50vw; */
     position: relative;
-    top: -90px;
+    top: -150px;
   }
   .mainContainer .phone img {
     width: 80%;
     height: auto;
   }
   .mainContainer .mainContainer .position {
-    width: 50vw;
+    width: 34vw;
   }
   .mainContainer .mainContainer .position p {
     word-break: break-word;
@@ -347,8 +381,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     width: 480px;
-    /* position: relative;
-    right: 300px; */
+    height: 364px;
   }
   #subjects {
     display: flex;
